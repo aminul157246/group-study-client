@@ -4,7 +4,8 @@ const Assignment = ({assignment}) => {
 
     const {_id, title,imageURL,assignmentMarks
     } = assignment;
-    
+    // cd \Projects\NODE\MONGODB\group-study-server
+    // cd \Projects\NODE\MONGODB\food-recipies-client
 
     return (
         <div>
@@ -15,7 +16,8 @@ const Assignment = ({assignment}) => {
     <p>{assignmentMarks}</p>
     <div className="card-actions ">
       <Link to={`/assignments/${_id}`} className="bg-white">view details</Link>
-      <button className="btn bg-[#F2184F]"></button>
+      <Link to={` `} className="bg-white">update</Link>
+      
     </div>
   </div>
 </div>
