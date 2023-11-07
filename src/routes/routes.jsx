@@ -7,6 +7,7 @@ import Home from "../pages/Home/Home";
 import MyAssignment from "../pages/MyAssignment";
 import Assignments from "../pages/Assignments";
 import CreateAssignment from "../pages/CreateAssignment";
+import AssignmentDetails from "../pages/AssignmentDetails";
 
 
 
@@ -21,7 +22,13 @@ const router = createBrowserRouter([
             },
             {
                 path: '/assignments',
-                element: <Assignments></Assignments>
+                element: <Assignments></Assignments>,
+                loader : () => fetch('http://localhost:3000/assignment')
+            },
+            {
+                path: '/assignments/:id',
+                element: <AssignmentDetails></AssignmentDetails>,
+                loader : ({params}) => fetch(`http://localhost:3000/assignment/${params.id}`)
             },
 
             {

@@ -60,7 +60,7 @@ const handleUpdateProfile = (name, photo) => {
 
 
     } ,[])
-console.log(user);
+// console.log(user);
 
     const authInfo = {
         signInWithGoogle, createUser, login,logOut, user, loader,handleUpdateProfile
