@@ -1,14 +1,17 @@
 import { Outlet } from "react-router-dom"
-import MainLayout from "./components/layout/MainLayout"
+import { Toaster } from "react-hot-toast"
+import Footer from "./pages/Footer"
+import Navbar from "./components/layout/Navbar/Navbar"
 
 
 function App() {
 
   return (
     <div>
-       <MainLayout>
+        <Navbar></Navbar>
         <Outlet></Outlet>
-       </MainLayout>
+        <Footer></Footer>
+        <Toaster></Toaster>
     </div>
   )
 }

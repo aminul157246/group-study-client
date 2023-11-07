@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Circuit",
+      "description": "Study electrical circuits and their components.",
+      "imageURL": "https://i.ibb.co/Mk62J1Q/card1.webp",
+      "assignmentMarks": 95
+    },
+    {
+      "title": "Electronics",
+      "description": "Explore the world of electronic devices and components.",
+      "imageURL": "https://i.ibb.co/Q68VKjH/card2.jpg",
+      "assignmentMarks": 88
+    },
+    {
+      "title": "Math",
+      "description": "Learn various mathematical concepts and problem-solving.",
+      "imageURL": "https://i.ibb.co/9rhDwBx/card3-2.jpg",
+      "assignmentMarks": 92
+    },
+    {
+      "title": "English",
+      "description": "Enhance your language and communication skills.",
+      "imageURL": "https://i.ibb.co/Gc4zKyL/card6.webp",
+      "assignmentMarks": 75
+    },
+    {
+      "title": "Chemistry",
+      "description": "Study the properties and reactions of chemical substances.",
+      "imageURL": "https://i.ibb.co/JcRfZg8/card.jpg",
+      "assignmentMarks": 87
+    },
+    {
+      "title": "Physics",
+      "description": "Explore the fundamental principles of the physical world.",
+      "imageURL": "https://i.ibb.co/LS9sPZt/card4.jpg",
+      "assignmentMarks": 90
+    }
+  ]
