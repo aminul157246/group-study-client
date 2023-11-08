@@ -1,4 +1,6 @@
 import Swal from "sweetalert2";
+
+
 const CreateAssignment = () => {
     const handleAddProduct = (event) => {
         event.preventDefault();
@@ -7,14 +9,16 @@ const CreateAssignment = () => {
 
         const form = event.target;
         const title = form.title.value;
-        const mark = form.mark.value;
+        const assignmentMark = form.assignmentMark.value;
         const description = form.description.value;
-        const image = form.image.value;
-        const createdAssignment = {title, mark, description, image};
+        const imageURL = form.imageURL.value;
+        const createdAssignment = {title, assignmentMark, description, imageURL};
         console.log(createdAssignment);
 
+
+
         // send data in server from here
-        fetch(" https://brand-shop-server-ij2rekxmp-aminul-islams-projects.vercel.app/products/", {
+        fetch(`http://localhost:3000/assignment`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -27,7 +31,7 @@ const CreateAssignment = () => {
                 if (data.insertedId) {
                     Swal.fire({
                         title: "Success!",
-                        text: "Assignment created successfully.  😻 ",
+                        text: "Assignment created successfully",
                         icon: "success",
                         confirmButtonText: "ok",
                     });
@@ -59,10 +63,10 @@ const CreateAssignment = () => {
                         <span className="label-text">Mark</span>
                     </label>
                     <input
-                        type="text"
+                        type="number"
                         placeholder="Assignment Mark"
                         className="input input-bordered"
-                        name="mark"
+                        name="assignmentMark"
                         required
                     />
                 </div>
@@ -89,7 +93,7 @@ const CreateAssignment = () => {
                         type="text"
                         placeholder="Assignment Image"
                         className="input input-bordered"
-                        name="image"
+                        name="imageURL"
                         required
                     />
                 </div>

@@ -1,5 +1,4 @@
-
-
+import logo from '../assets/images/glogo.png'
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import toast from "react-hot-toast";
@@ -23,7 +22,7 @@ const LoginWithGoogle = () => {
 
     return (
         <div>
-            <button onClick={handleGoogleLogin} className="btn">Google log in </button>
+            <button onClick={handleGoogleLogin} ><img className='w-[80px]' src={logo} alt="" /></button>
         </div>
     );
 };

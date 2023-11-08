@@ -6,8 +6,8 @@ const Feature = () => {
     return (
          <div className='my-12'>
         <h2 className='text-3xl text-center mb-4'>Our <span className='text-[#F2184F]'>Courses</span></h2>
-        <div className='grid grid-cols-2 gap-8'>
-            <div className='flex justify-center items-center  gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+            <div className='flex-col lg:flex justify-center items-center  gap-4'>
                 <div className='flex-1'>
                     <img className='rounded-lg'  src={img1} alt="" />
                 </div>
@@ -20,7 +20,7 @@ const Feature = () => {
 
 
 
-            <div className='flex justify-center items-center gap-4'>
+            <div className='flex-col lg:flex justify-center items-center gap-4'>
                 <div className='flex-1'>
                     <img className='rounded-lg' src={img2} alt="" />
                 </div>
@@ -34,7 +34,7 @@ const Feature = () => {
 
 
 
-            <div className='flex justify-center items-center gap-4'>
+            <div className='flex-col lg:flex justify-center items-center gap-4'>
                 <div className='flex-1'>
                     <img className='rounded-lg' src={img3} alt="" />
                 </div>
@@ -47,7 +47,7 @@ const Feature = () => {
 
 
 
-            <div className='flex justify-center items-center gap-4'>
+            <div className='flex-col lg:flex justify-center items-center gap-4'>
                 <div className='flex-1'>
                     <img className='rounded-lg' src={img4} alt="" />
                 </div>

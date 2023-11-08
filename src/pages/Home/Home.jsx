@@ -8,11 +8,13 @@ import Feature from './Feature';
 const Home = () => {
     return (
         
-           <Container>
-             <Banner></Banner>
+           <div>
+            <Container>
+             <Banner ></Banner>
              <Feature></Feature>
              <Faq></Faq>
            </Container>
+           </div>
     );
 };
 

@@ -1,7 +1,7 @@
 
 const Faq = () => {
     return (
-        <div className="my-12">
+        <div className="my-16">
             <h2 className="text-3xl font-semibold text-[#F2184F] text-center "> Frequently Asked Questions</h2>
             <h1 className="text-xl mb-4">Popular Question </h1>
             <div className="collapse collapse-arrow bg-base-200">

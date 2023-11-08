@@ -14,7 +14,7 @@ const PrivateRoute = ({children}) => {
     console.log(location.pathname);
 
     if(loader){
-            return <h3>Loading..............</h3>
+            return <span className="loading loading-spinner loading-lg"></span>
     }
 
 
