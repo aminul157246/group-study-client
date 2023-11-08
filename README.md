@@ -13,7 +13,7 @@ Certainly! Creating an educational website with features tailored to students' n
    - Provide options to edit or delete assignments (if allowed by the instructor).
 
 ### 4. **Responsive Design**:
-   - You've already achieved this, but it's crucial! Ensure your website looks great and functions well on various devices (desktops, tablets, and mobile phones).
+   - My website looks great and functions well on various devices (desktops, tablets, and mobile phones).
 
 ### 5. **Privacy and Data Security**:
     - Ensure compliance with data protection regulations  
