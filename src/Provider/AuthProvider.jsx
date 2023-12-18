@@ -4,6 +4,13 @@ import PropTypes from 'prop-types';
 import auth from "../config/firebase";
 
 
+
+
+import { FacebookAuthProvider } from "firebase/auth";
+
+const FacebookProvider = new FacebookAuthProvider();
+
+
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
@@ -13,11 +20,18 @@ const AuthProvider = ({children}) => {
     const[loader, setLoader] = useState(true)
 
     //signInWithGoogle
-    const provider = new GoogleAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
     const signInWithGoogle  = () => {
         setLoader(true)
-        return signInWithPopup(auth, provider)
+        return signInWithPopup(auth, googleProvider)
     }
+
+    // signInWithGoogle
+    const signInWithFacebook = () => {
+        setLoader(true)
+        signInWithPopup(auth, FacebookProvider)
+    }
+
 
     // create user 
     const createUser = (email, password) => {
@@ -63,7 +77,7 @@ const handleUpdateProfile = (name, photo) => {
 // console.log(user);
 
     const authInfo = {
-        signInWithGoogle, createUser, login,logOut, user, loader,handleUpdateProfile
+        signInWithGoogle, signInWithFacebook, createUser, login,logOut, user, loader,handleUpdateProfile
     }
 
 

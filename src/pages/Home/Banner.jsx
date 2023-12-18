@@ -1,12 +1,36 @@
+import { useEffect, useState } from 'react';
 import banner1 from '../../assets/images/banner1.webp'
 import banner2 from '../../assets/images/banner2.jpg'
 import banner3 from '../../assets/images/banner3.jpg'
 import banner4 from '../../assets/images/banner4.jpg'
+import ClassicPostLoader from './ClassicPostLoader';
 
 const Banner = () => {
+
+
+
+
+  const [isLoading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false); // Change isLoading to false after a delay (simulating content loaded)
+    }, 1000); // Simulated delay of 2 seconds
+
+    // Clean up the timer on unmount or when isLoading changes
+    return () => clearTimeout(timer);
+  }, []);
+
+
+
+
+
   return (
      
-    <div className='dark:text-white '>
+    <div>
+      {
+        isLoading ? <ClassicPostLoader/> : 
+        <div className='dark:text-white '>
       <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full">
 
@@ -90,6 +114,8 @@ const Banner = () => {
         </div>
       </div>
     </div>
+    </div>
+      }
     </div>
 
   );

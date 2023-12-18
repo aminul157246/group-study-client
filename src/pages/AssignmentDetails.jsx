@@ -10,7 +10,7 @@ const AssignmentDetails = () => {
 
     const handleDelete = deletedId => {
 
-        fetch(`http://localhost:3000/assignments/${deletedId}`, {
+        fetch(`http://localhost:5000/assignments/${deletedId}`, {
 
             method: "DELETE"
         })

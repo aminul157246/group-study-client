@@ -18,7 +18,7 @@ const CreateAssignment = () => {
 
 
         // send data in server from here
-        fetch(`http://localhost:3000/assignment`, {
+        fetch(`http://localhost:5000/assignment`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

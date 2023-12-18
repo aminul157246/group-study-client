@@ -1,41 +1,39 @@
-import { useLoaderData } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const UpdateAssignment = () => {
 
-    const assignments = useLoaderData();
-    const {title,_id, assignmentMarks,description, imageURL} = assignments;
-    console.log(assignments);
+    // const assignments = useLoaderData();
+    // const {title,_id, assignmentMarks,description, imageURL} = assignments;
+    // console.log(assignments);
 
-    const handleUpdateProduct = (id)=> {
+    // const handleUpdateProduct = (id)=> {
 
-        fetch(`http://localhost:3000/updateAssignment/${id}`, {
-        method : 'PUT', 
-        headers : {
-          "Content-Type": "application/json",
-        },
-        body : JSON.stringify(assignments )
-      })
+    //     fetch(`https://localhost:5000/assignments/${id}`, {
+    //     method : 'PUT', 
+    //     headers : {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body : JSON.stringify(assignments )
+    //   })
     
       
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        if(data.modifiedCount>0){
-          Swal.fire({
-            title: 'Success!',
-            text: 'Product  updated successfully ',
-            icon: 'success',
-            confirmButtonText: 'ok'
-          })
-        }
-      })
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     console.log(data);
+    //     if(data.modifiedCount>0){
+    //       Swal.fire({
+    //         title: 'Success!',
+    //         text: 'Product  updated successfully ',
+    //         icon: 'success',
+    //         confirmButtonText: 'ok'
+    //       })
+    //     }
+    //   })
     
 
     
 
 
-    } 
+    // } 
 
 
 
@@ -52,7 +50,7 @@ const UpdateAssignment = () => {
                     </label>
                     <input
                         type="text"
-                         defaultValue={title} placeholder=" Assignment Title"
+                           placeholder=" Assignment Title"
                         className="input input-bordered"
                         name="title"
                         required
@@ -65,7 +63,7 @@ const UpdateAssignment = () => {
                     </label>
                     <input
                         type="text"
-                        defaultValue={assignmentMarks} placeholder="Assignment Mark"
+                          placeholder="Assignment Mark"
                         className="input input-bordered"
                         name="mark"
                         required
@@ -78,7 +76,7 @@ const UpdateAssignment = () => {
                     </label>
                     <input
                         type="text"
-                         defaultValue={description} placeholder="Assignment Description"
+                          placeholder="Assignment Description"
                         className="input input-bordered"
                         name="description"
                         required
@@ -92,14 +90,14 @@ const UpdateAssignment = () => {
                     </label>
                     <input
                         type="text"
-                         defaultValue={imageURL} placeholder="Assignment Image"
+                           placeholder="Assignment Image"
                         className="input input-bordered"
                         name="image"
                         required
                     />
                 </div>
                 <div className="flex justify-center">
-                    <button onClick={()=>handleUpdateProduct(_id)} className="btn  mt-4">Update Assignment</button>
+                    <button  className="btn  mt-4">Update Assignment</button>
                 </div>
             </form>
         </div>
