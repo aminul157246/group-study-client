@@ -4,7 +4,6 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import router from './routes/routes'
 import AuthProvider from './Provider/AuthProvider'
-import AnimCursor from './components/AnimCursor'
 
 
 

@@ -1,7 +1,6 @@
 
 import Container from '../../components/ui/Container';
 import Banner from './Banner';
-import ChatBox from './ChatBox';
 import Faq from './Faq';
 import Feature from './Feature';
 
@@ -14,7 +13,6 @@ const Home = () => {
              <Banner ></Banner>
              <Feature></Feature>
              <Faq></Faq>
-           <ChatBox></ChatBox>
            </Container>
 
            </div>

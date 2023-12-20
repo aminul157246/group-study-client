@@ -25,12 +25,12 @@ const router = createBrowserRouter([
             {
                 path: '/assignments',
                 element: <Assignments></Assignments>,
-                loader : () => fetch('http://localhost:5000/assignment')
+                loader : () => fetch('https://group-study-server-five.vercel.app/assignment')
             },
             {
                 path: '/assignments/:id',
                 element: <PrivateRoute><AssignmentDetails></AssignmentDetails></PrivateRoute> ,
-                loader : ({params}) => fetch(`http://localhost:5000/assignment/${params.id}`)
+                loader : ({params}) => fetch(`https://group-study-server-five.vercel.app/assignment/${params.id}`)
             },
 
             {

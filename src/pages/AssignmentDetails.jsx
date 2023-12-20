@@ -10,7 +10,7 @@ const AssignmentDetails = () => {
 
     const handleDelete = deletedId => {
 
-        fetch(`http://localhost:5000/assignments/${deletedId}`, {
+        fetch(`https://group-study-server-five.vercel.app/assignments/${deletedId}`, {
 
             method: "DELETE"
         })
